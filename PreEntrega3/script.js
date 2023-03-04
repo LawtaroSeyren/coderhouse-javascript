@@ -14,7 +14,7 @@ function agregarPersona(evento) {
   // Crear un objeto de persona con los datos ingresados
   const persona = { nombre, edad, email };
 
-  // Agregar el objeto de persona al array de personas en session storage
+  // Agregar el objeto de persona al array de personas en local storage
   let personas = [];
   if (localStorage.getItem('personas')) {
     personas = JSON.parse(localStorage.getItem('personas'));
@@ -35,7 +35,7 @@ function agregarPersona(evento) {
 function actualizarListaPersonas() {
   listaPersonas.innerHTML = '';
 
-  // Obtener el array de personas desde session storage
+  // Obtener el array de personas desde local storage
   let personas = [];
   if (localStorage.getItem('personas')) {
     personas = JSON.parse(localStorage.getItem('personas'));
@@ -60,7 +60,7 @@ function actualizarListaPersonas() {
     const botonEliminar = document.createElement('button');
     botonEliminar.textContent = 'Eliminar';
     botonEliminar.addEventListener('click', () => {
-      // Eliminar el objeto de persona correspondiente del array en localStorage
+      // Eliminar el objeto de persona correspondiente del array en local storage
       personas.splice(indice, 1);
       localStorage.setItem('personas', JSON.stringify(personas));
 
@@ -75,7 +75,7 @@ function actualizarListaPersonas() {
 
 // Función para reiniciar la lista de personas
 function reiniciarListaPersonas() {
-  // Eliminar el array de personas de session storage
+  // Eliminar el array de personas de local storage
   localStorage.removeItem('personas');
 
   // Actualizar la vista de la lista
