@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=VT323&display=swap');
+
+body {
+    background-image: url('../fondo.jpg');
+    background-attachment: fixed;
+    color: white;
+    font-size: larger;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+#formulario{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: auto;
+}
+
+#formulario button{
+  margin-top: 20px;
+}
+
+#formulario input:focus {
+  border: solid 10px rgba(255, 255, 255, 0);
+  transition: all 0.5s;
+}
+
+.regionBloque {
+  border-radius: 5px;
+  border: solid 2px;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  font-size: 1.7rem;
+  font-family: 'VT323', monospace;
+  margin: auto;
+}
+
+.verde {
+  background-color: rgb(18, 102, 56);
+}
+
+.naranja {
+  background-color: rgb(207, 95, 3);
+}
+
+.rojo {
+  background-color: rgb(105, 8, 41);
+}
+
+.azul {
+  background-color: rgb(18, 57, 102);
+}
+
+.violeta {
+  background-color: rgb(102, 18, 102);
+}
+
+.rosa {
+  background-color: rgb(201, 20, 110);
+}
+
+.celeste {
+  background-color: rgba(21, 191, 214, 0.863);
+}
+
+.gris {
+  background-color: rgb(44, 43, 44);
+}
+
+.imgPokemon{
+  width: 150px;
+  margin: auto;
+  padding: auto;
+}
+
+.infoPokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nombrePokemon {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  width: 300px;
+}
+
+.idPokemon{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  width: 300px;
+}
+
+.tituloEntrenador {
+  font-weight: bold;
+  text-align: center; 
+}
+
+.botonEliminar {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: rgb(255, 0, 64);
+  border-radius: 10px;
+  border: solid rgb(105, 8, 41);
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  transition: all 1s;
+}
+
+.botonEliminar:hover {
+  background-color: rgb(233, 105, 137);
+  transition: all 1s;
+}
+
+.claseEntrenador {
+  background-color: rgba(37, 37, 37, 0.788);
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: solid 2px rgb(255, 255, 255);
+  margin: 10px;
+  padding: 27px;
+  height: auto;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.11);
+};
+
